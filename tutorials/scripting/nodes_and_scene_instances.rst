@@ -28,12 +28,12 @@ To do so, you can use the following code.
 .. tabs::
  .. code-tab:: gdscript GDScript
 
-    var sprite2d
-    var camera2d
+    var a_sprite
+    var a_camera
 
     func _ready():
-        sprite2d = get_node("Sprite2D")
-        camera2d = get_node("Camera2D")
+        a_sprite = get_node("a sprite")
+        a_camera = get_node("a camera")
 
  .. code-tab:: csharp
 
@@ -44,12 +44,9 @@ To do so, you can use the following code.
     {
         base._Ready();
 
-        _sprite2D = GetNode<Sprite2D>("Sprite2D");
-        _camera2D = GetNode<Camera2D>("Camera2D");
+        _sprite2D = GetNode<Sprite2D>("a sprite");
+        _camera2D = GetNode<Camera2D>("a camera");
     }
-
-Note that you get nodes using their name, not their type. Above, "Sprite2D" and
-"Camera2D" are the nodes' names in the scene.
 
 .. image:: img/nodes_and_scene_instances_sprite_node.webp
 
